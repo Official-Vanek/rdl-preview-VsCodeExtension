@@ -6,8 +6,8 @@
     "publisher": "Vanek",
     "author": {
         "name": "Vivek Sai",
-        "url": "https://your-website.com",
-        "email": "your-email@example.com"
+        "url": "https://www.linkedin.com/in/vivek-sai-43b368191",
+        "email": "saivivek045@gmail.com"
     },
     "engines": {
         "vscode": "^1.75.0"
@@ -21,14 +21,13 @@
         "theme": "dark"
     },
     "icon": "icon.png",
-    "homepage": "https://your-website.com",
+    "homepage": "https://www.linkedin.com/in/vivek-sai-43b368191",
     "bugs": {
-        "url": "https://github.com/your-username/rdl-preview/issues"
+        "url": "https://github.com/Official-Vanek/rdl-preview-VsCodeExtension/issues"
     },
-    "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/your-username/rdl-preview"
+        "url": "https://github.com/Official-Vanek/rdl-preview-VsCodeExtension.git"
     },
     "keywords": [
         "rdl",
