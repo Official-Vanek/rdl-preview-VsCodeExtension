@@ -1,0 +1,72 @@
+{
+    "name": "rdl-preview",
+    "displayName": "RDL Report Preview",
+    "description": "Preview RDL/RDLC reports directly in VS Code with dummy data support. Perfect for Business Central and SSRS report development.",
+    "version": "1.0.0",
+    "publisher": "Vanek",
+    "author": {
+        "name": "Vivek Sai",
+        "url": "https://your-website.com",
+        "email": "your-email@example.com"
+    },
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "categories": [
+        "Visualization",
+        "Other"
+    ],
+    "galleryBanner": {
+        "color": "#1e3a5f",
+        "theme": "dark"
+    },
+    "icon": "icon.png",
+    "homepage": "https://your-website.com",
+    "bugs": {
+        "url": "https://github.com/your-username/rdl-preview/issues"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/your-username/rdl-preview"
+    },
+    "keywords": [
+        "rdl",
+        "rdlc",
+        "report",
+        "preview",
+        "ssrs",
+        "business central",
+        "dynamics 365",
+        "al"
+    ],
+    "activationEvents": [
+        "onCommand:rdl-preview.preview"
+    ],
+    "main": "./src/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "rdl-preview.preview",
+                "title": "Preview RDL Report",
+                "icon": "$(open-preview)"
+            }
+        ],
+        "menus": {
+            "editor/title": [
+                {
+                    "command": "rdl-preview.preview",
+                    "when": "resourceExtname == .rdl || resourceExtname == .rdlc",
+                    "group": "navigation"
+                }
+            ],
+            "explorer/context": [
+                {
+                    "command": "rdl-preview.preview",
+                    "when": "resourceExtname == .rdl || resourceExtname == .rdlc",
+                    "group": "navigation"
+                }
+            ]
+        }
+    }
+}
